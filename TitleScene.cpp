@@ -28,11 +28,12 @@ SceneManager::Scene TitleScene::Update()
 // タイトルシーンの描画処理
 void TitleScene::Draw()
 {
-#if defined(_DEBUG)
     Novice::DrawBox(0, 0, kWindowWidth, kWindowHeight, 0.0f, BLACK, kFillModeSolid);
     // デバッグ時に画面に表示
     Novice::ScreenPrintf(600, 200, "TitleScene");
     Novice::ScreenPrintf(600, 400, "Press SPACE");
+#if defined(_DEBUG)
+   
 #endif
 }
 
